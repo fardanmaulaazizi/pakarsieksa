@@ -378,6 +378,12 @@ export default function Products() {
                     />
                   </div>
                   <div className="grid grid-cols-4 items-center gap-4">
+                    <Label htmlFor="price" className="text-right">
+                      Discount Price
+                    </Label>
+                    <Input id="price" type="number" className="col-span-3" />
+                  </div>
+                  <div className="grid grid-cols-4 items-center gap-4">
                     <Label htmlFor="stock" className="text-right">
                       Stock
                     </Label>
@@ -641,6 +647,12 @@ export default function Products() {
                   }
                   className="col-span-3"
                 />
+              </div>
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label htmlFor="price" className="text-right">
+                  Discount Price
+                </Label>
+                <Input id="price" type="number" className="col-span-3" />
               </div>
               <div className="items-center gap-4">
                 <Label htmlFor="edit-stock" className="text-right">
