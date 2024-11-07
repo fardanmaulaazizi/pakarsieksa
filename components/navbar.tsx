@@ -20,7 +20,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import {
@@ -31,14 +31,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { menu } from "@/data/menu";
 import { productsDummy } from "@/data/productsdummy";
-import {
-  Menu,
-  Minus,
-  Plus,
-  Search,
-  ShoppingCart,
-  User
-} from "lucide-react";
+import { Menu, Minus, Plus, Search, ShoppingCart, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
@@ -117,34 +110,13 @@ export default function Navbar({
                       </Link>
                     ))}
                   </nav>
-                  {/* Language */}
-                  {/* <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button>
-                        {language}
-                        <ChevronDown className="ml-2 h-4 w-4" />
-                      </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent>
-                      <DropdownMenuRadioGroup
-                        value={language}
-                        onValueChange={setLanguage}
-                      >
-                        <DropdownMenuRadioItem value="Indonesian">
-                          Indonesian
-                        </DropdownMenuRadioItem>
-                        <DropdownMenuRadioItem value="English">
-                          English
-                        </DropdownMenuRadioItem>
-                      </DropdownMenuRadioGroup>
-                    </DropdownMenuContent>
-                  </DropdownMenu> */}
                 </SheetContent>
               </Sheet>
               <Link
                 href="/"
-                className="text-2xl font-bold text-primary text-white hover:text-yellow"
+                className="text-2xl font-bold text-primary gap-3 items-center text-white hover:text-yellow flex"
               >
+                <img src="/images/logo.png" alt="logo" className="w-6 h-6" />
                 Pakarxie
               </Link>
             </div>
@@ -321,9 +293,7 @@ export default function Navbar({
                           </DropdownMenuItem>
                         </Link>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem
-                          className="hover:cursor-pointer"
-                        >
+                        <DropdownMenuItem className="hover:cursor-pointer">
                           Log out
                         </DropdownMenuItem>
                       </DropdownMenuContent>
@@ -354,9 +324,7 @@ export default function Navbar({
                           <form className="space-y-4">
                             <Input placeholder="Email" type="email" />
                             <Input placeholder="Password" type="password" />
-                            <Button className="w-full">
-                              Login
-                            </Button>
+                            <Button className="w-full">Login</Button>
                           </form>
                         </TabsContent>
                         <TabsContent value="register">

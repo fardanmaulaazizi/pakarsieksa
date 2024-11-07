@@ -39,7 +39,7 @@ export default function ProductCarousel({
         className="w-full"
       >
         <CarouselContent className="-ml-2 md:-ml-4 items-center">
-          {products.map((product) => (
+          {products.slice(0, 5).map((product) => (
             <CarouselItem
               key={product.id}
               className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
@@ -65,7 +65,11 @@ export default function ProductCarousel({
                       </Link>
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
+                  <h3 className="text-md  mb-2">
+                    {product.name.length > 30
+                      ? product.name.slice(0, 30) + "..."
+                      : product.name}
+                  </h3>
                   <p className="text-xl font-bold">
                     {product.price.toLocaleString("id-ID", {
                       style: "currency",

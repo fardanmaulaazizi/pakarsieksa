@@ -1,23 +1,23 @@
 export const dummyCategories = [
   {
     id: 1,
-    name: "Electronics",
+    name: "Perkakas Listrik",
   },
   {
     id: 2,
-    name: "Furnitures",
+    name: "Mesin Gergaji",
   },
   {
     id: 3,
-    name: "Painting",
+    name: "Alat Keamanan Diri",
   },
   {
     id: 4,
-    name: "Power Tools",
+    name: "Alat Pengukuran",
   },
   {
     id: 5,
-    name: "Equipment",
+    name: "Alat Keselamatan Kerja",
   },
 ];
 

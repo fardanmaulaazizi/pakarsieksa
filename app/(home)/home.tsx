@@ -52,37 +52,7 @@ export default function Home({ isLogin }: any) {
     return () => clearTimeout(timer);
   }, [cart]);
 
-  const products = [
-    {
-      id: 1,
-      name: "Hammer",
-      category: "Tools",
-      subcategory: "Hand Tools",
-      price: 19.99,
-    },
-    {
-      id: 2,
-      name: "Painting",
-      category: "Painting",
-      subcategory: "Painting",
-      price: 19.99,
-    },
-    {
-      id: 3,
-      name: "Painting",
-      category: "Painting",
-      subcategory: "Painting",
-      price: 19.99,
-    },
-    {
-      id: 4,
-      name: "Painting",
-      category: "Painting",
-      subcategory: "Painting",
-      price: 19.99,
-    },
-  ];
-
+  
   return (
     <div className="min-h-screen bg-background flex flex-col bg-red">
       <Navbar

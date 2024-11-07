@@ -28,198 +28,187 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
-const categories = [
+export const categories = [
   {
     id: 1,
-    name: "Electronics",
+    name: "Perkakas Listrik",
     subcategories: [
-      { id: 11, name: "Smartphones" },
-      { id: 12, name: "Laptops" },
-      { id: 13, name: "Accessories" },
+      { id: 11, name: "Gerinda" },
+      { id: 12, name: "Mesin Gergaji" },
+      { id: 13, name: "Mesin Poles" },
+      { id: 14, name: "Bor" },
     ],
   },
   {
     id: 2,
-    name: "Clothing",
+    name: "Perkakas",
     subcategories: [
-      { id: 21, name: "Men" },
-      { id: 22, name: "Women" },
-      { id: 23, name: "Kids" },
+      { id: 21, name: "Keamanan Diri" },
+      { id: 22, name: "Pengukuran" },
+      { id: 23, name: "Gergaji" },
+      { id: 24, name: "Palu dan Kapak" },
     ],
   },
   {
     id: 3,
-    name: "Home & Garden",
-    subcategories: [
-      { id: 31, name: "Furniture" },
-      { id: 32, name: "Decor" },
-      { id: 33, name: "Gardening" },
-    ],
+    name: "Peralatan Listrik",
+    subcategories: [{ id: 31, name: "Bor" }],
   },
 ];
 
-const products = [
+export const products = [
   {
     id: 1,
-    name: "iPhone 12",
-    category: "Electronics",
-    subcategory: "Smartphones",
-    image: "acer-aspire-a514-53.png",
-    price: 799,
-    reviews: 1200,
+    name: "Krisbow Gerinda",
+    category: "Perkakas Listrik",
+    subcategory: "Gerinda",
+    image: "gerinda.png",
+    price: 374900,
+    reviews: 100,
   },
   {
     id: 2,
-    name: "MacBook Pro",
-    category: "Electronics",
-    subcategory: "Laptops",
-    image: "cupboard.png",
-    price: 1299,
-    reviews: 980,
+    name: "Worx Jigsaw 10 Cm 750 W",
+    category: "Perkakas Listrik",
+    subcategory: "Mesin Gergaji",
+    image: "work-jigsaw.png",
+    price: 896400,
+    reviews: 200,
   },
   {
     id: 3,
-    name: "AirPods Pro",
-    category: "Electronics",
-    subcategory: "Accessories",
-    image: "cupboard.png",
-    price: 249,
-    reviews: 2100,
+    name: "Krisbow Brim Helm Kuning",
+    category: "Perkakas",
+    subcategory: "Keamanan Diri",
+    image: "krisbow-helm.png",
+    price: 92900,
+    reviews: 1200,
   },
   {
     id: 4,
-    name: "Men's Slim Shirt",
-    category: "Clothing",
-    subcategory: "Men",
-    image: "desk-chair.png",
-    price: 39,
-    reviews: 450,
+    name: "Krisbow Kacamata Pengaman",
+    category: "Perkakas",
+    subcategory: "Keamanan Diri",
+    image: "kacamata-pengaman.png",
+    price: 200000,
+    reviews: 1200,
   },
   {
     id: 5,
-    name: "Women's Dress",
-    category: "Clothing",
-    subcategory: "Women",
-    image: "desk-chair.png",
-    price: 59,
-    reviews: 720,
+    name: "Krisbow Mikrometer Luar 0-25mm/0.01mm",
+    category: "Perkakas",
+    subcategory: "Pengukuran",
+    image: "micrometer.png",
+    price: 329900,
+    reviews: 1200,
   },
   {
     id: 6,
-    name: "Kids' Sneakers",
-    category: "Clothing",
-    subcategory: "Kids",
-    image: "desk-chair.png",
-    price: 45,
-    reviews: 280,
+    name: "Worx Mesin Amplas Kayu 250W",
+    category: "Perkakas Listrik",
+    subcategory: "Mesin Poles",
+    image: "worx-mesin-amplas-kayu-250w.png",
+    price: 503400,
+    reviews: 120,
   },
   {
     id: 7,
-    name: "Leather Sofa",
-    category: "Home & Garden",
-    subcategory: "Furniture",
-    image: "desk-chair.png",
-    price: 899,
-    reviews: 150,
+    name: "Tactix Jangka Sorong Digital 15 Cm",
+    category: "Perkakas",
+    subcategory: "Pengukuran",
+    image: "tactix-jangka-sorong-digital-15-cm.png",
+    price: 503400,
+    reviews: 120,
   },
   {
     id: 8,
-    name: "Wall Clock",
-    category: "Home & Garden",
-    subcategory: "Decor",
-    image: "desk-chair.png",
-    price: 29,
-    reviews: 890,
+    name: "Greenworks Mesin Amplas Kayu Orbital 12.5 Cm 24v",
+    category: "Perkakas Listrik",
+    subcategory: "Bor",
+    image: "greenworks-mesin-amplas-kayu-orbital-12-5-cm-24v.png",
+    price: 832300,
+    reviews: 120,
   },
   {
     id: 9,
-    name: "Garden Hose",
-    category: "Home & Garden",
-    subcategory: "Gardening",
-    image: "desk-chair.png",
-    price: 19,
-    reviews: 340,
+    name: "Krisbow Bor Cordless Impact 10 Mm 12v Ircid122",
+    category: "Perkakas Listrik",
+    subcategory: "Bor",
+    image: "krisbow-bor-cordless-impact-10-mm-12v-Ircid122.png",
+    price: 799920,
+    reviews: 120,
   },
   {
     id: 10,
-    name: "Samsung Galaxy S21",
-    category: "Electronics",
-    subcategory: "Smartphones",
-    image: "desk-chair.png",
-    price: 799,
-    reviews: 1500,
+    name: "Worx Bor Cordless Rotary Hammer 26 Mm 20v Wx392.1",
+    category: "Perkakas Listrik",
+    subcategory: "Bor",
+    image: "worx-bor-cordless-rotary-hammer-26-mm-20v-wx392-1.png",
+    price: 1891450,
+    reviews: 133,
   },
   {
     id: 11,
-    name: "Dell XPS 13",
-    category: "Electronics",
-    subcategory: "Laptops",
-    image: "desk-chair.png",
-    price: 999,
-    reviews: 760,
+    name: "Krisbow Gergaji Besi Square Type 30cm",
+    category: "Perkakas",
+    subcategory: "Gergaji",
+    image: "Krisbow-gergaji-besi-square-type-30cm.png",
+    price: 27400,
+    reviews: 133,
   },
   {
     id: 12,
-    name: "Wireless Mouse",
-    category: "Electronics",
-    subcategory: "Accessories",
-    image: "desk-chair.png",
-    price: 29,
-    reviews: 1800,
+    name: "Greenworks Gergaji Sirkular Cordless 6 Inci 24v",
+    category: "Perkakas Listrik",
+    subcategory: "Bor",
+    image: "greenworks-gergaji-sirkular-cordless-6-inci-24v.png",
+    price: 1588300,
+    reviews: 133,
   },
   {
     id: 13,
-    name: "Men's Jeans",
-    category: "Clothing",
-    subcategory: "Men",
-    image: "desk-chair.png",
-    price: 49,
-    reviews: 620,
+    name: "Krisbow Palu Kambing Dengan Handle Rubber 220 Gr",
+    category: "Perkakas",
+    subcategory: "Palu dan Kapak",
+    image: "krisbow-palu-kambing-dengan-handle-rubber-220-gram.png",
+    price: 67900,
+    reviews: 77,
   },
   {
     id: 14,
-    name: "Women's Blouse",
-    category: "Clothing",
-    subcategory: "Women",
-    image: "desk-chair.png",
-    price: 34,
-    reviews: 410,
+    name: "Tactix Maru Palu Dengan Handle Fiberglass 226 Gr",
+    category: "Perkakas",
+    subcategory: "Palu dan Kapak",
+    image: "tactix-maru-palu-dengan-handle-fiberglass-226-gr.png",
+    price: 90930,
+    reviews: 77,
   },
   {
     id: 15,
-    name: "Kids' Pajamas",
-    category: "Clothing",
-    subcategory: "Kids",
-    image: "desk-chair.png",
-    price: 25,
-    reviews: 190,
+    name: "Krisbow Obeng Nirkabel Bmc 3.6v Ircs362",
+    category: "Peralatan Listrik",
+    subcategory: "Bor",
+    image: "krisbow-obeng-nirkabel-bmc-3.6v-Ircs362.png",
+    price: 379900,
+    reviews: 67,
   },
   {
     id: 16,
-    name: "Dining Table Set",
-    category: "Home & Garden",
-    subcategory: "Furniture",
-    image: "desk-chair.png",
-    price: 599,
-    reviews: 80,
+    name: "Worx Bor Listrik Impact 600 Watt 13 Mm Wx317.3",
+    category: "Peralatan Listrik",
+    subcategory: "Bor",
+    image: "worx-bor-listrik-impact-600-watt-13-mm-wx317.3.png",
+    price: 896400,
+    reviews: 55,
   },
   {
     id: 17,
-    name: "Table Lamp",
-    category: "Home & Garden",
-    subcategory: "Decor",
-    image: "desk-chair.png",
-    price: 39,
-    reviews: 560,
-  },
-  {
-    id: 18,
-    name: "Pruning Shears",
-    category: "Home & Garden",
-    subcategory: "Gardening",
-    image: "desk-chair.png",
-    price: 15,
-    reviews: 230,
+    name: "Krisbow Mesin Gergaji Jigsaw Cordless 18v Esj-18c",
+    category: "Peralatan Listrik",
+    subcategory: "Bor",
+    image: "krisbow-mesin-gergaji-jigsaw-cordless-18v-esj-18c.png",
+    price: 1332000,
+    reviews: 67,
   },
 ];
 
@@ -232,7 +221,7 @@ export default function Products() {
     Record<number, boolean>
   >({});
   const [minPrice, setMinPrice] = useState<number>(0);
-  const [maxPrice, setMaxPrice] = useState<number>(1500);
+  const [maxPrice, setMaxPrice] = useState<number>(10000000);
   const [minReviews, setMinReviews] = useState<number>(0);
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 8;
@@ -258,7 +247,6 @@ export default function Products() {
     checked: boolean
   ) => {
     setSelectedSubcategories((prev) => ({ ...prev, [subcategoryId]: checked }));
-    // Remove the line that was automatically selecting the parent category
   };
 
   const isSubcategorySelected = (categoryId: number) => {
@@ -382,7 +370,9 @@ export default function Products() {
 
           {/* Categories */}
           <div className="mb-6 text-white">
-            <h3 className="font-semibold mb-2 text-yellow">Categories</h3>
+            <h3 className="font-semibold mb-2 text-yellow">
+              Berdasarkan Kategori
+            </h3>
             {categories.map((category) => (
               <div key={category.id} className="mb-2">
                 <div className="flex items-center space-x-2">
@@ -428,7 +418,9 @@ export default function Products() {
 
           {/* Price Range */}
           <div className="mb-6">
-            <h3 className="font-semibold mb-2 text-yellow">Price Range</h3>
+            <h3 className="font-semibold mb-2 text-yellow">
+              Berdasarkan Harga
+            </h3>
             <div className="flex items-center space-x-2">
               <Input
                 type="number"
@@ -450,7 +442,9 @@ export default function Products() {
 
           {/* Minimum Reviews */}
           <div className="mb-6">
-            <h3 className="font-semibold mb-2 text-yellow">Minimum Reviews</h3>
+            <h3 className="font-semibold mb-2 text-yellow">
+              Berdasarkan Jumlah Review
+            </h3>
             <Select onValueChange={(value) => setMinReviews(Number(value))}>
               <SelectTrigger>
                 <SelectValue placeholder="Select minimum reviews" />
@@ -484,7 +478,7 @@ export default function Products() {
             {currentProducts.map((product) => (
               <Card
                 key={product.id}
-                className="group hover:shadow-lg transition-shadow duration-300"
+                className="group hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between"
               >
                 <CardContent className="p-4">
                   <div className="relative overflow-hidden">
@@ -504,7 +498,11 @@ export default function Products() {
                       </Link>
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold">{product.name}</h3>
+                  <h3 className="text-lg font-semibold h-16">
+                    {product.name.length > 40
+                      ? product.name.slice(0, 40) + "..."
+                      : product.name}
+                  </h3>
                   <p className="text-sm text-gray-600 mb-3">
                     {product.category} - {product.subcategory}
                   </p>
@@ -514,6 +512,7 @@ export default function Products() {
                       currency: "IDR",
                     })}
                   </p>
+                  <p className="text-slate-400">Review: {product.reviews} </p>
                 </CardContent>
                 <CardFooter>
                   <Button
