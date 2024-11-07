@@ -32,6 +32,11 @@ export default function Banner() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <div className="text-center text-white">
+              <img
+                src="/images/logo.png"
+                alt="logo"
+                className="w-32 md:w-44 mb-2 mx-auto hover:-rotate-45 transition-all duration-150 cursor-pointer shadow-md"
+              />
               <h2 className="text-lg md:text-4xl font-bold mb-4">
                 {slide.title}
               </h2>

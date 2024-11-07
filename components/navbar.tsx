@@ -99,6 +99,12 @@ export default function Navbar({
                 </SheetTrigger>
                 <SheetContent side="left" className=" bg-yellow text-white">
                   <nav className="flex flex-col gap-4 mb-3">
+                    <img
+                      src="/images/logo.png"
+                      alt="logo"
+                      className="w-full mx-auto"
+                    />
+
                     {menu.map((item) => (
                       <Link
                         key={item.name}
@@ -116,7 +122,6 @@ export default function Navbar({
                 href="/"
                 className="text-2xl font-bold text-primary gap-3 items-center text-white hover:text-yellow flex"
               >
-                <img src="/images/logo.png" alt="logo" className="w-6 h-6" />
                 Pakarxie
               </Link>
             </div>
