@@ -1,7 +1,7 @@
 import Product from "./product";
 
 export async function generateStaticParams() {
-  return true;
+  return [{ id: "1" }];
 }
 
 export default async function Page({

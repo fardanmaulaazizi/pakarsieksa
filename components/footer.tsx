@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <div className="flex flex-col text-2xl justify-between items-center gap-8">
           <h3 className="text-xl font-bold mb-4 text-yellow">
-            Tentang Pakarsie
+            Tentang Pakarxie
           </h3>
           <p className="text-white text-sm text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nisi
@@ -20,10 +20,13 @@ export default function Footer() {
             dolorem. Nihil voluptatum dolores, dignissimos quae maiores ducimus
             aperiam sapiente? Impedit, unde.
           </p>
+          <p className="text-yellow text-sm text-center">
+            Email: tianyuanhardware@gmail.com
+          </p>
         </div>
         <div className="mt-8 pt-8 border-t border-slate-100 text-center">
           <p className="text-sm text-yellow font-bold">
-            &copy; 2024 Pakarsie. All rights reserved.
+            &copy; 2024 Pakarxie. All rights reserved.
           </p>
         </div>
       </div>

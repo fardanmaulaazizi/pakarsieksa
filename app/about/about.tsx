@@ -1,16 +1,13 @@
 "use client";
+import Navbar from "@/components/navbar";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import Navbar from "@/components/navbar";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function About() {
   const [cart, setCart] = useState([]);

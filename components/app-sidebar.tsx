@@ -60,7 +60,7 @@ export function AppSidebar() {
       <SidebarContent className="bg-primary text-yellow">
         <SidebarGroup>
           <SidebarGroupLabel className="text-3xl text-white font-bold mb-5">
-            Pakarsie
+            Pakarxie
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>

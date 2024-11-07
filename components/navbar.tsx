@@ -55,8 +55,6 @@ import { ScrollArea } from "./ui/scroll-area";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
 import { Separator } from "./ui/separator";
-import { LogIn, LogOut } from "@/lib/auth";
-import { redirect } from "next/dist/server/api-utils";
 import { menu } from "@/data/menu";
 import { productsDummy } from "@/data/productsdummy";
 
@@ -329,7 +327,6 @@ export default function Navbar({
                         </Link>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem
-                          onClick={() => logout()}
                           className="hover:cursor-pointer"
                         >
                           Log out
@@ -362,7 +359,7 @@ export default function Navbar({
                           <form className="space-y-4">
                             <Input placeholder="Email" type="email" />
                             <Input placeholder="Password" type="password" />
-                            <Button className="w-full" onClick={() => login()}>
+                            <Button className="w-full">
                               Login
                             </Button>
                           </form>
@@ -386,12 +383,4 @@ export default function Navbar({
       </nav>
     </>
   );
-}
-
-async function login() {
-  const login = await LogIn();
-}
-
-async function logout() {
-  const login = await LogOut();
 }

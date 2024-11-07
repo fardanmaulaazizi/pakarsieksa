@@ -1,9 +1,8 @@
 export const banner = [
   {
     image: "banner-1.jpg",
-    title: "Dukung Performa, Tingkatkan Efisiensi",
-    description:
-      "Dari alat hingga perawatan, kami siap memenuhi kebutuhan MRO Anda",
+    title: "10.000+ Jenis Alat Keperkakasan",
+    description: "Esok Penghantaran ke awak",
   },
   {
     image: "banner-2.jpg",
