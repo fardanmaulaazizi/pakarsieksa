@@ -152,7 +152,7 @@ export default function Navbar({
                 href="/"
                 className="text-2xl font-bold text-primary text-white hover:text-yellow"
               >
-                Pakarsie
+                Pakarxie
               </Link>
             </div>
             <div className="flex items-center gap-5">
