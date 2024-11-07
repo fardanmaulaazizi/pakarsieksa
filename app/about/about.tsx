@@ -141,39 +141,7 @@ export default function About() {
           </Card>
         </section>
 
-        {/* <section className="mb-12">
-          <h2 className="text-2xl mb-4 font-bold">Our Team</h2>
-          <section className="w-full rounded-md overflow-hidden mb-5">
-            <Image
-              src={"/images/about/our-team.jpg"}
-              alt="placeholder"
-              width={1280}
-              height={1280}
-              className="w-full"
-            />
-          </section>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-            {teamMembers.map((member, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <Avatar className="w-24 h-24 mx-auto">
-                    <AvatarImage src={member.image} alt={member.name} />
-                    <AvatarFallback>
-                      {member.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </AvatarFallback>
-                  </Avatar>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <CardTitle>{member.name}</CardTitle>
-                  <CardDescription>{member.role}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section> */}
+        
 
         <Card className="bg-white p-5">
           <h2 className="text-2xl font-bold mb-4">Our Values</h2>

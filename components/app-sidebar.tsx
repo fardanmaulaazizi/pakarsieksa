@@ -29,27 +29,27 @@ const items = [
   },
   {
     title: "Products",
-    url: "/dashboard/products",
+    url: "/dashboard-products",
     icon: Package,
   },
   {
     title: "Categories",
-    url: "/dashboard/categories",
+    url: "/dashboard-categories",
     icon: BarChart3,
   },
   {
     title: "Promotions",
-    url: "/dashboard/promotions",
+    url: "/dashboard-promotions",
     icon: Tag,
   },
   {
     title: "Transactions",
-    url: "/dashboard/transactions",
+    url: "/dashboard-transactions",
     icon: NotepadText,
   },
   {
     title: "Users",
-    url: "/dashboard/users",
+    url: "/dashboard-users",
     icon: Users,
   },
 ];

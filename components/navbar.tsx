@@ -1,11 +1,4 @@
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { Input } from "@/components/ui/input";
 import {
   Command,
   CommandEmpty,
@@ -15,16 +8,6 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {
   Dialog,
   DialogContent,
   DialogDescription,
@@ -32,18 +15,36 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  User,
-  Search,
-  ChevronDown,
-  ShoppingCart,
-  Plus,
-  Minus,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { menu } from "@/data/menu";
+import { productsDummy } from "@/data/productsdummy";
+import {
   Menu,
-  Images,
+  Minus,
+  Plus,
+  Search,
+  ShoppingCart,
+  User
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
+import { Badge } from "./ui/badge";
+import { ScrollArea } from "./ui/scroll-area";
+import { Separator } from "./ui/separator";
 import {
   Sheet,
   SheetContent,
@@ -51,12 +52,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { ScrollArea } from "./ui/scroll-area";
-import Image from "next/image";
-import { Badge } from "./ui/badge";
-import { Separator } from "./ui/separator";
-import { menu } from "@/data/menu";
-import { productsDummy } from "@/data/productsdummy";
 
 const products = productsDummy;
 
@@ -239,7 +234,7 @@ export default function Navbar({
                                   className="flex items-center justify-between py-4"
                                 >
                                   <div className="flex items-center space-x-4">
-                                    <Image
+                                    <img
                                       src={`/images/products/${product.image}`}
                                       alt={product.name}
                                       width={64}

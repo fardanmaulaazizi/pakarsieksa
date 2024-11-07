@@ -277,7 +277,7 @@ export const BlurImage = ({
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
   return (
-    <Image
+    <img
       className={cn(
         "transition duration-300",
         isLoading ? "blur-sm" : "blur-0",

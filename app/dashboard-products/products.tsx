@@ -419,7 +419,7 @@ export default function Products() {
                   </div>
                   {newProduct.image instanceof File && (
                     <div className="col-span-4 flex justify-center">
-                      <Image
+                      <img
                         src={URL.createObjectURL(newProduct.image)}
                         alt="New product preview"
                         width={100}
@@ -502,7 +502,7 @@ export default function Products() {
               {currentItems.map((product) => (
                 <TableRow key={product.id}>
                   <TableCell>
-                    <Image
+                    <img
                       src={
                         product.image instanceof File
                           ? URL.createObjectURL(product.image)
@@ -689,7 +689,7 @@ export default function Products() {
               </div>
               {editingProduct && (
                 <div className="col-span-4 flex justify-center">
-                  <Image
+                  <img
                     src={
                       editingProduct.image instanceof File
                         ? URL.createObjectURL(editingProduct.image)

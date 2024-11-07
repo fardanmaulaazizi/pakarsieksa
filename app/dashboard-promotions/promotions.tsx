@@ -284,7 +284,7 @@ export default function Promotions() {
                   </div>
                   {newPromotions.image instanceof File && (
                     <div className="col-span-4 flex justify-center">
-                      <Image
+                      <img
                         src={URL.createObjectURL(newPromotions.image)}
                         alt="New promotions preview"
                         width={100}
@@ -311,7 +311,7 @@ export default function Promotions() {
               {currentItems.map((promotions) => (
                 <TableRow key={promotions.id}>
                   <TableCell>
-                    <Image
+                    <img
                       src={
                         promotions.image instanceof File
                           ? URL.createObjectURL(promotions.image)
@@ -425,7 +425,7 @@ export default function Promotions() {
               </div>
               {editingPromotions && (
                 <div className="col-span-4 flex justify-center">
-                  <Image
+                  <img
                     src={
                       editingPromotions.image instanceof File
                         ? URL.createObjectURL(editingPromotions.image)

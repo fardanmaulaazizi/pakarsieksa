@@ -488,7 +488,7 @@ export default function Products() {
               >
                 <CardContent className="p-4">
                   <div className="relative overflow-hidden">
-                    <Image
+                    <img
                       src={`/images/products/${product.image}`}
                       alt={product.name}
                       width={200}

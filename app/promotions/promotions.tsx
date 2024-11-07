@@ -112,7 +112,7 @@ export default function Promotions() {
                   <Card className="overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl">
                     <CardContent className="p-0 relative">
                       <AspectRatio ratio={4 / 3}>
-                        <Image
+                        <img
                           src={item.src}
                           alt={item.alt}
                           fill
@@ -128,7 +128,7 @@ export default function Promotions() {
                   </Card>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[500px] p-0">
-                  <Image
+                  <img
                     src={item.src}
                     alt={item.alt}
                     width={1280}

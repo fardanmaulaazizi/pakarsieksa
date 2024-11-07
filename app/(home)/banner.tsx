@@ -23,7 +23,7 @@ export default function Banner() {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Image
+          <img
             src={`/images/banner/${slide.image}`}
             width={1920}
             height={1080}

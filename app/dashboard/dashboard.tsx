@@ -21,12 +21,12 @@ import SalesReport from "./sales-report";
 import Link from "next/link";
 export default function Dashboard() {
   const navItems = [
-    { name: "Users", icon: Users, url: "/dashboard/users" },
-    { name: "Products", icon: Package, url: "/dashboard/products" },
-    { name: "Promotions", icon: Tag, url: "/dashboard/promotions" },
-    { name: "Categories", icon: BarChart3, url: "/dashboard/categories" },
-    { name: "Transactions", icon: NotepadText, url: "/dashboard/transactions" },
-    { name: "Website Settings", icon: Settings, url: "/dashboard/settings" },
+    { name: "Users", icon: Users, url: "/dashboard-users" },
+    { name: "Products", icon: Package, url: "/dashboard-products" },
+    { name: "Promotions", icon: Tag, url: "/dashboard-promotions" },
+    { name: "Categories", icon: BarChart3, url: "/dashboard-categories" },
+    { name: "Transactions", icon: NotepadText, url: "/dashboard-transactions" },
+    { name: "Website Settings", icon: Settings, url: "/dashboard-settings" },
   ];
 
   const dailySalesData = [

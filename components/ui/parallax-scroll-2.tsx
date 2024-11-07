@@ -51,7 +51,7 @@ export const ParallaxScrollSecond = ({
               }} // Apply the translateY motion value here
               key={"grid-1" + idx}
             >
-              <Image
+              <img
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                 height="400"
@@ -64,7 +64,7 @@ export const ParallaxScrollSecond = ({
         <div className="grid gap-10">
           {secondPart.map((el, idx) => (
             <motion.div key={"grid-2" + idx}>
-              <Image
+              <img
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                 height="400"
@@ -84,7 +84,7 @@ export const ParallaxScrollSecond = ({
               }}
               key={"grid-3" + idx}
             >
-              <Image
+              <img
                 src={el}
                 className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
                 height="400"
