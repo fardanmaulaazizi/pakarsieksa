@@ -30,21 +30,18 @@ export default function Banner() {
             alt={slide.title}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-            <div className="text-center text-white">
-              <img
-                src="/images/logo.png"
-                alt="logo"
-                className="w-32 md:w-44 mb-2 mx-auto hover:-rotate-45 transition-all duration-150 cursor-pointer shadow-md"
-              />
-              <h2 className="text-lg md:text-4xl font-bold mb-4">
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-transparent flex items-center justify-center md:justify-start ">
+            <div className=" text-white text-center md:text-start md:ms-24 md:w-full p-3">
+              <h2 className="text-3xl text-center md:text-start md:text-7xl font-bold mb-8 md:w-2/5 ">
                 {slide.title}
               </h2>
-              <p className="text-md md:text-xl mb-8">{slide.description}</p>
+              <p className="text-xl md:text-3xl mb-8 md:w-2/5">
+                {slide.description}
+              </p>
               <Link href="/product">
                 <Button
-                  size="lg"
-                  className="bg-yellow text-white hover:bg-yellow-300"
+                  size={"lg"}
+                  className="bg-primary text-white text-xl hover:bg-red py-6 px-7"
                 >
                   Beli Sekarang
                 </Button>
